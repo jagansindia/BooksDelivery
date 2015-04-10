@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>BooksDelivery Picker</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">BooksDelivery</a>
+    </div>
+  </nav>
+    <div class="section">
+<div class="row">
+	<div class="col s12 m6 l4 offset-l4" align="center">
+    <span class="msg"></span>
+    <h4> Seller Login </h4>    </div>
+    <form class="col s12" action="#" id="loginform" method="post">
+        <div class="row">
+        <div class="input-field col s12 m6 l4 offset-l4">
+          <input id="username" type="text" name="username" class="validate" required>
+          <label for="username">Username</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6 l4 offset-l4">
+          <input id="password" type="password" name="password" class="validate" required>
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6 l4 offset-l4" align="center">
+          <button class="btn waves-effect waves-light" type="submit" id="action" name="action">Login
+            <i class="mdi-content-send right"></i>
+          </button>
+        </div>
+      </div>
+        
+    </form>
+  </div></div>   
+    
+  </div>
+
+  <footer class="page-footer orange hide-on-small-only">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://jagansindia.in">Jagansindia, Inc</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+<script>
+$(document).ready(function(){
+	var serviceurl="http://booksdelivery.com/seller/";
+		$("#loginform").submit(function(){
+			//alert("hi");
+				var username=$("#username",this).val();
+				$(".msg").html('<div class="progress"><div class="indeterminate"></div></div>').fadeIn("slow");
+				$.post( serviceurl+"core/login.php",
+				$("#loginform").serialize(),
+
+				function(data){
+					if(data=="yes")
+					{	
+					//localstorage username
+					window.localStorage["username"] = username;
+						window.location = "index.html";
+					}
+					else
+					{
+						//alert("Username or Password Wrong!");
+						$(".msg").html(data).fadeIn("slow");
+						localStorage.removeItem('username');
+					}
+				}) 				
+				.fail(function() { $(".msg").html('<p class="card-panel teal lighten-2">No Internet Connection</p>') })
+				return false;
+  });
+      
+  
+});
+</script>
+
+
+  </body>
+</html>

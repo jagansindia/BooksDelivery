@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tasks>
+    <RunRules>
+      <ExecutableRule name="RS_COLUMN_HAS_NO_NULLS"/>
+      <ExecutableRule name="RS_COLUMN_HAS_NO_NULLS"/>
+      <ExecutableRule name="RS_COLUMN_HAS_NO_NULLS"/>
+    </RunRules>
+</Tasks>
