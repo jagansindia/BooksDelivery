@@ -35,7 +35,15 @@
         <li class="tab col s3"><a href="#test2">New Orders</a></li>
       </ul>
     </div>
-    <div id="loadpicklist"></div>
+    <div id="test1" class="col s12 no-padding"> 
+    	<ul class="collection">
+	    </ul>
+    </div>
+    <div id="test2" class="col s12 no-padding"> 
+    	<ul class="collection" id="neworders">
+	    </ul>
+    </div>
+
   </div>
   </div>
   <footer class="page-footer orange hide-on-small-only">
@@ -51,36 +59,7 @@
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
-<script>
-$(document).ready(function(){
-	var serviceurl="http://booksdelivery.com/seller/";
-	
-	if(window.localStorage["username"] == undefined)
-{
-	window.location = "login.html";
-}
-else
-{
-	var username = window.localStorage["username"];
-	//alert(username);
-	$('.iavatar').html(username);
-	
-	$.post( serviceurl+"core/picklist.php?username="+username,
-				$("#loginform").serialize(),
-				function(data){
-						//alert("Username or Password Wrong!");
-						$("#loadpicklist").html(data).fadeIn("slow");
-						
-				})
-								.fail(function() { $(".msg").html('<p class="card-panel teal lighten-2">No Internet Connection</p>') })
-				return false;
-
-}
-
-	
-});
-</script>
+  <script src="js/index.js"></script>
 
 
   </body>
