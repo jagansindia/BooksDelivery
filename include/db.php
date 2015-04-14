@@ -3,9 +3,9 @@ $host="localhost";
 //echo $_SERVER['HTTP_HOST'];
 if($_SERVER['HTTP_HOST']=="booksdelivery.com")
 {
-$dbusername="etailsqu_ocar716"; //database username
-$dbpassword="y(2d@P2m7S"; //database password
-$dbname="etailsqu_ocar716"; //database name
+$dbusername="booksdel_estore"; //database username
+$dbpassword="472s!PH@SV"; //database password
+$dbname="booksdel_estore"; //database name
 }
 else
 {

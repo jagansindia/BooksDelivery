@@ -53,10 +53,10 @@ $('#neworders').append('<a href="#!" class="collection-item"> Order '+ order.ord
 
 $('.pickclick').click(function(){
 	
-	var id=(this).attr('id');
+	var orderid=(this).attr('id');
 	
 	
-	$.get( serviceurl+"core/createpicks.php?username="+username,
+	$.get( serviceurl+"core/createpicks.php?username="+username+"&orderid="+orderid,
 				function(data){
 						//alert("Username or Password Wrong!");
 						if(!data)
