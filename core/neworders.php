@@ -13,4 +13,8 @@ if($count>0)
 	}
 	echo '{"orders":'.json_encode($row).'}';
 }
+else
+{
+	echo '{"orders":'.json_encode($row).'}';
+}
 ?>

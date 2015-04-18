@@ -1,6 +1,7 @@
 // JavaScript Document - 13th April 2015
-$(document).ready(function(){
-	var serviceurl="http://booksdelivery.com/seller/";
+var serviceurl="http://booksdelivery.com/seller/";
+
+//$(document).ready(function(){
 	
 	if(window.localStorage["username"] == undefined)
 {
@@ -39,7 +40,8 @@ var orders;
 						else
 						{
 $.each(data.orders, function(i,order){
-$('#neworders').append('<a href="#!" class="collection-item"> Order '+ order.order_id +'<span class="badge pickclick" id="'+ order.order_id +'">Pick</span></a>');
+$('#neworders').append('	<li class="collection-item"><div> Order '+ order.order_id +'<a href="#" id="'+ order.order_id +'" class="secondary-content" onclick="pickclick('+ order.order_id +')">Pick <i class="mdi-content-send"></i></a></div></li>');
+/*$('#neworders').append('<a href="#!" class="collection-item"> Order '+ order.order_id +'<span class="badge pickclick" id="'+ order.order_id +'">Pick</span></a>');*/
 });
 							
 					//	$(".msg").html(data).fadeIn("slow");
@@ -47,14 +49,15 @@ $('#neworders').append('<a href="#!" class="collection-item"> Order '+ order.ord
 				})
 				.fail(function() { $(".msg").html('<p class="card-panel teal lighten-2">No Response from Server</p>') })
 
-		return false;
-} //end of IF
-
-
-$('.pickclick').click(function(){
 	
-	var orderid=(this).attr('id');
-	
+//}); //end of document ready
+
+//Functions are written out of document load
+
+function pickclick(orderid) {
+	//alert("Youclicked");
+//	var orderid=(this).attr('id');
+//alert(data);	
 	
 	$.get( serviceurl+"core/createpicks.php?username="+username+"&orderid="+orderid,
 				function(data){
@@ -70,7 +73,8 @@ $('.pickclick').click(function(){
 				})
 				.fail(function() { $(".msg").html('<p class="card-panel teal lighten-2">No Internet Connection</p>') })
 	
-	});
+}	
 
-	
-}); //end of document ready
+	//	return false;
+} //end of IF
+
