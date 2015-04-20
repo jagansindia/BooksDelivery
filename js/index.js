@@ -24,6 +24,22 @@ else
 						else
 						{
 						$(".msg").html(data).fadeIn("slow");
+						//display pick list items
+						$.each(data.picklist, function(i,pick){
+$('#picklist').append('<li class="collection-item avatar"><img src="images/yuna.jpg" alt="" class="circle"><span class="title">'+ pick.order_id +'</span><div> Order '+ pick.order_id +'<a href="#" id="'+ order.order_id +'" class="secondary-content" onclick="pickclick('+ order.order_id +')">Pick <i class="mdi-content-send"></i></a></div></li>');
+});
+		
+/*
+<li class="collection-item avatar">
+      <img src="images/yuna.jpg" alt="" class="circle">
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+    </li>
+*/		
+		
 						}
 				})
 				.fail(function() { $(".msg").html('<p class="card-panel teal lighten-2">No Internet Connection</p>') })
@@ -39,6 +55,7 @@ var orders;
 						}
 						else
 						{
+							//display new order list items
 $.each(data.orders, function(i,order){
 $('#neworders').append('	<li class="collection-item"><div> Order '+ order.order_id +'<a href="#" id="'+ order.order_id +'" class="secondary-content" onclick="pickclick('+ order.order_id +')">Pick <i class="mdi-content-send"></i></a></div></li>');
 /*$('#neworders').append('<a href="#!" class="collection-item"> Order '+ order.order_id +'<span class="badge pickclick" id="'+ order.order_id +'">Pick</span></a>');*/
@@ -68,7 +85,8 @@ function pickclick(orderid) {
 						}
 						else
 						{
-						$(".msg").html(data).fadeIn("slow");
+						$('#'+orderid).remove();
+						$('#test1').addClass("active");
 						}
 				})
 				.fail(function() { $(".msg").html('<p class="card-panel teal lighten-2">No Internet Connection</p>') })
