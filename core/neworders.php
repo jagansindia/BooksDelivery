@@ -15,6 +15,6 @@ if($count>0)
 }
 else
 {
-	echo '{"orders":'.json_encode($row).'}';
+	echo '0';
 }
 ?>
