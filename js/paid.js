@@ -17,13 +17,13 @@ function unpaidrefresh() {
 //unpaid list
 var totalitems=0;
 var totalamount=0;
-	$.getJSON( serviceurl+"core/unpaid.php?username="+username,
+	$.getJSON( serviceurl+"core/paid.php?username="+username,
 				function(data){
 						//alert("Username or Password Wrong!");
 						$('#unpaidlist li').remove();
 						if(!data)
 						{
-						$("#test1").html('<ul class="collection"><a href="#!" class="collection-item  center-align">Hurray! No outstanding payments!</a></ul>');	
+						$("#test1").html('<ul class="collection"><a href="#!" class="collection-item  center-align">Ohoh! You did not have anything to get paid!</a></ul>');	
 						}
 						else
 						{

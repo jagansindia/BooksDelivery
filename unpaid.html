@@ -18,8 +18,8 @@
         <li><a href="index.html">My Orders</a></li>
         <li><a href="index.html">New Orders</a></li>
         <li><a href="unpaid.html">Unpaid Items</a></li>
-        <li><a href="#">Paid Items</a></li>
-        <li><a href="#">Transactions</a></li>
+        <li><a href="paid.html">Paid Items</a></li>
+        <li><a href="transactions.html">Transactions</a></li>
         <li><a href="login.html">Logout</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse" style="display:block;"><i class="mdi-navigation-menu"></i></a>
@@ -28,9 +28,20 @@
     <div class="section">
 <div class="row">
     <span class="msg"></span>
-
+ <div class="col s12">
+ <h5 class="teal-text">Unpaid Books</h5>
+   	<div class="col s8 l3 teal lighten-3"><p>Amount to be Paid</p></div>
+    <div class="col s4 l3 teal white-text" id="pendingamount"><p>Rs.0</p></div>
+ </div></div>
+ <div class="row">  
+ <div class="col s12"> 
+    <div class="col s8 l3 cyan lighten-3"><p>Total Books</p></div>
+    <div class="col s4 l3 cyan white-text" id="totalbook"><p>0</p></div>
+    </div>
+</div>    
+   <div class="row">
     <div class="col s12">
-    <h5 class="teal-text">Unpaid Books</h5>
+   
     <div id="test1" class="col s12 no-padding"> 
     	<ul class="collection" id="unpaidlist">
 	    </ul>
@@ -38,6 +49,7 @@
 
   </div>
   </div>
+  
   <footer class="page-footer orange hide-on-small-only">
     <div class="footer-copyright">
       <div class="container">
