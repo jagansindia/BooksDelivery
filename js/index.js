@@ -27,8 +27,35 @@ function pickrefresh() {
 						{
 						//$(".msg").html(data).fadeIn("slow");
 						//display pick list items
+						var olderorderid=0;
+						var bgcolor="teal lighten-2";
+						window.localStorage["olderorderid"]="0";
+						
+						var numberOfElements = data.picklist.length;
+							//alert(numberOfElements);
+						//To find the order product counts
+						$.each(data.picklist, function(i,ordercount){
+
+							});
+						//To display list of picking items
 						$.each(data.picklist, function(i,pick){
-$('#picklist').append('<li class="collection-item avatar" id="b'+ pick.order_product_id +'"><img src="http://booksdelivery.com/image/'+ pick.image +'" alt="Photo" class="circle responsive-img"><span class="title">' + pick.product_name + '</span><p class="truncate">'+ pick.author + '<br>'+ pick.manufacturer_name +'</p><a href="#!" class="secondary-content" onclick="productpicked('+ pick.order_product_id +')"><h5 class="teal white-text">&nbsp;' + pick.pick_quantity + '&nbsp;</h5> </a></li>');
+							var orderid=pick.order_id;
+							//alert(window.localStorage["olderorderid"]);
+							//alert(pick.order_id);
+							
+							if(orderid!=window.localStorage["olderorderid"])
+							{
+								bgcolor="teal lighten-4";
+							}
+							
+			
+							if(window.localStorage["olderorderid"]==0)
+							{
+								bgcolor="";
+							}
+$('#picklist').append('<li class="collection-item avatar '+ bgcolor +'" id="b'+ pick.order_product_id +'"><img src="http://booksdelivery.com/image/'+ pick.image +'" alt="Photo" class="circle responsive-img"><span class="title">' + pick.order_id + '_' + pick.order_product_id + ': ' + pick.product_name + '</span><p class="truncate">'+ pick.author + '<br>'+ pick.manufacturer_name +'</p><a href="#!" class="secondary-content" onclick="productpicked('+ pick.order_product_id +')">1/1<h5 class="teal white-text">&nbsp;' + pick.pick_quantity + '&nbsp;</h5> </a></li>');
+ window.localStorage["olderorderid"]=pick.order_id;
+//alert(olderorderid);
 					    });
 					   }
 				       })
