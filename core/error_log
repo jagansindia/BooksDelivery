@@ -1,0 +1,36 @@
+[08-Apr-2015 11:53:17 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/booksdel/public_html/seller/core/picklist.php on line 54
+[08-Apr-2015 11:53:55 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/booksdel/public_html/seller/core/picklist.php on line 54
+[08-Apr-2015 11:54:17 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/booksdel/public_html/seller/core/picklist.php on line 54
+[13-Apr-2015 10:26:00 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/neworders.php on line 11
+[13-Apr-2015 10:26:44 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/neworders.php on line 6
+[14-Apr-2015 10:48:52 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'etailsqu_ocar716'@'localhost' (using password: YES) in /home/booksdel/public_html/seller/include/db.php on line 16
+[14-Apr-2015 10:50:39 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/booksdel/public_html/seller/core/login.php on line 11
+[14-Apr-2015 10:50:39 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/login.php on line 12
+[14-Apr-2015 10:50:39 Asia/Kolkata] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/login.php on line 13
+[14-Apr-2015 10:50:54 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/booksdel/public_html/seller/core/login.php on line 11
+[14-Apr-2015 10:50:54 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/login.php on line 12
+[14-Apr-2015 10:50:54 Asia/Kolkata] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/login.php on line 13
+[14-Apr-2015 10:53:44 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/booksdel/public_html/seller/core/login.php on line 11
+[14-Apr-2015 10:53:44 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/login.php on line 12
+[14-Apr-2015 10:53:44 Asia/Kolkata] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/booksdel/public_html/seller/core/login.php on line 13
+[20-Apr-2015 11:13:19 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/booksdel/public_html/seller/core/picklist.php on line 12
+[20-Apr-2015 11:13:33 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/booksdel/public_html/seller/core/picklist.php on line 12
+[20-Apr-2015 11:27:55 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/booksdel/public_html/seller/core/picklist.php on line 12
+[27-Apr-2015 16:20:01 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 6
+[27-Apr-2015 16:20:22 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'mysqli_fetch_assoc' (T_STRING) in /home/booksdel/public_html/seller/core/neworders1.php on line 12
+[27-Apr-2015 16:20:37 Asia/Kolkata] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/booksdel/public_html/seller/core/neworders1.php on line 6
+[27-Apr-2015 16:23:24 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$object' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 17
+[27-Apr-2015 16:23:32 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 17
+[27-Apr-2015 16:24:01 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 19
+[27-Apr-2015 16:24:13 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$object' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 19
+[27-Apr-2015 16:24:55 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$object' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 19
+[27-Apr-2015 17:17:57 Asia/Kolkata] PHP Fatal error:  Call to undefined function mysqli_result() in /home/booksdel/public_html/seller/core/neworders1.php on line 20
+[27-Apr-2015 17:18:41 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 22
+[27-Apr-2015 17:18:52 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/booksdel/public_html/seller/core/neworders1.php on line 22
+[24-May-2015 14:11:09 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/booksdel/public_html/seller/include/db.php on line 16
+[21-Jul-2015 11:25:33 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/booksdel/public_html/seller/include/db.php on line 16
+[21-Jul-2015 11:25:33 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/booksdel/public_html/seller/include/db.php on line 16
+[21-Jul-2015 11:25:36 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/booksdel/public_html/seller/include/db.php on line 16
+[21-Jul-2015 11:25:36 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/booksdel/public_html/seller/include/db.php on line 16
+[21-Jul-2015 11:25:47 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/booksdel/public_html/seller/include/db.php on line 16
+[21-Jul-2015 11:25:47 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/booksdel/public_html/seller/include/db.php on line 16
