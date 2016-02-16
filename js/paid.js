@@ -31,7 +31,7 @@ var totalamount=0;
 						//display pick list items
 						$.each(data.picklist, function(i,pick){
 $('#unpaidlist').append('<li class="collection-item"><p class="truncate"><span class="title">ID:'+pick.order_product_id +' - ' + pick.product_name +'</span><br>'+ pick.manufacturer_name + '<br>Order No:'+pick.order_id +' &nbsp; Picked:'+pick.picked_time+'<br><span class="deep-purple white-text"> &nbsp; MRP: '+ parseFloat(pick.mrp) +' &nbsp;</span> <span class="blue lighten-1 white-text">  &nbsp;Qty : '+ pick.pick_quantity + '</span> &nbsp; <span class="orange darken-3 white-text">  &nbsp;'+ pick.pick_discount + '%  &nbsp;</span>  &nbsp;<span class="teal white-text">&nbsp; Rs.' + parseFloat(pick.pick_total) + '&nbsp;</span></p></a></li>');
-						totalitems=totalitems+1;
+						totalitems=totalitems+parseFloat(pick.pick_quantity);
 						totalamount=totalamount+parseFloat(pick.pick_total);
 					    });
 						$("#pendingamount").html('<p>Rs.'+totalamount+'</p>');

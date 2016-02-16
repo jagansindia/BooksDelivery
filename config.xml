@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.booksdelivery.seller" version="0.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.booksdelivery.seller" version="1.0.1">
   <name>BooksDelivery Seller</name>
   <description>BooksDelivery Seller app shows the list of products to pick for particular seller and also allows to pick up new orders! Allows to manage the seller payments on mobile app.</description>
   <author href="http://jagansindia.in" email="support@jagansindia.in">Jagansindia, Inc Team</author>
