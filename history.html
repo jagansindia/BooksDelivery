@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>BooksDelivery Picker</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">BooksDelivery</a>
+
+      <ul id="nav-mobile" class="side-nav full">
+       <li class="logo"><img src="res/avatar.png"/><a href="#">Welcome <span class="iavatar"></span></a></li>
+        <li><a href="index.html">My Orders</a></li>
+        <li><a href="unpaid.html">Unsettled Items</a></li>
+        <li><a href="readyforpay.html">Upcoming Payments</a></li>
+        <li><a href="paid.html">Paid Items</a></li>
+        <li><a href="transactions.html">Transactions</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse" style="display:block;"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+    <div class="section">
+<div class="row">
+    <span class="msg"></span>
+ <div class="col s12">
+ <h5 class="teal-text">All Paid Items History</h5>
+   	<div class="col s8 l3 teal lighten-3"><p>Total Settled Amount</p></div>
+    <div class="col s4 l3 teal white-text" id="pendingamount"><p>Rs.0</p></div>
+ </div></div>
+ <div class="row">  
+ <div class="col s12"> 
+    <div class="col s8 l3 cyan lighten-3"><p>Total Books</p></div>
+    <div class="col s4 l3 cyan white-text" id="totalbook"><p>0</p></div>
+ </div>
+</div> 
+<div class="row">  
+ <div class="col s12"> 
+    <div class="col s8 l3 cyan lighten-3">
+    <label for="fromdate" class="black-text" >From Date</label>
+    <input  type="date" class="datepicker" id="fromdate"></div>
+    <div class="col s4 l3 cyan white-text"><label for="fromdate" class="white-text" >To Date</label>
+    <input  type="date" class="datepicker" id="todate"></div>
+ </div>
+</div>    
+   <div class="row">
+    <div class="col s12">
+   
+    <div id="test1" class="col s12 no-padding"> 
+    	<ul class="collection" id="unpaidlist">
+	    </ul>
+    </div>
+
+  </div>
+  </div>
+  
+  <footer class="page-footer orange hide-on-small-only">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://jagansindia.in">Jagansindia, Inc</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/paidhistory.js"></script>
+  </body>
+</html>

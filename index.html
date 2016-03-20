@@ -10,17 +10,12 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+ <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">BooksDelivery</a>
 
       <ul id="nav-mobile" class="side-nav full">
-       <li class="logo"><img src="res/avatar.png"/><a href="#">Welcome <span class="iavatar"></span></a></li>
-        <li><a href="index.html">My Orders</a></li>
-        <li><a href="unpaid.html">Unsettled Items</a></li>
-        <li><a href="readyforpay.html">Upcoming Payments</a></li>
-        <li><a href="paid.html">Paid Items</a></li>
-        <li><a href="transactions.html">Transactions</a></li>
-        <li><a href="login.html">Logout</a></li>
+      	<li class="logo"><img src="res/avatar.png"/><a href="#">Welcome <span class="iavatar"></span></a></li>
+        <div data-include="htmlinc/menu.html"></div>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse" style="display:block;"><i class="mdi-navigation-menu"></i></a>
     </div>
@@ -50,19 +45,13 @@
     </div>
   </div>
   </div>
-  <footer class="page-footer orange hide-on-small-only">
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://jagansindia.in">Jagansindia, Inc</a>
-      </div>
-    </div>
-  </footer>
-
+   <div data-include="htmlinc/footer.html"></div>
 
   <!--  Scripts-->
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/csi.min.js"></script>
   </body>
 </html>
