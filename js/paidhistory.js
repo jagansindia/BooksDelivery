@@ -94,7 +94,7 @@ $('#unpaidlist').append('<li class="collection-item"><p class="truncate"><span c
         
 
 //on new page load all contents and lists
-//unpaidrefresh(); //new orders refresh
+unpaidrefresh(); //new orders refresh
 
 //Functions are written out of document load
 

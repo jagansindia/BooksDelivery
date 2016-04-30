@@ -2,8 +2,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.booksdelivery.seller"
-    versionCode = "14" 
-    version     = "1.0.4" >
+    versionCode = "15" 
+    version     = "1.0.5" >
 <!-- versionCode is optional and Android only -->
 
   <name>BooksDelivery Seller</name>
@@ -26,12 +26,14 @@
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
-  <plugin name="cordova-plugin-console" spec="1.0.1" source="pgb" />
-  <plugin name="cordova-plugin-dialogs" spec="1.1.1" source="pgb" />
-  <plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
-  <plugin name="cordova-plugin-network-information" spec="1.0.1" source="pgb" />
-  <plugin name="cordova-plugin-splashscreen" spec="2.1.0" source="pgb" />
-  <plugin name="cordova-plugin-vibration" spec="1.2.0" source="pgb" />
+  <preference name="android-build-tool" value="gradle" />
+  <plugin name="cordova-plugin-console" />
+  <plugin name="cordova-plugin-dialogs" />
+  <plugin name="cordova-plugin-inappbrowser" />
+  <plugin name="cordova-plugin-network-information" />
+  <plugin name="cordova-plugin-splashscreen" />
+  <plugin name="cordova-plugin-vibration" />
+  <plugin name="phonegap-plugin-push" />
   <plugin name="cordova-plugin-whitelist" />
   <icon src="icon.png"/>
   <icon src="res/icon/android/icon-36-ldpi.png" platform="android" qualifier="ldpi"/>
