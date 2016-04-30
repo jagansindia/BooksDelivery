@@ -33,7 +33,6 @@
   <plugin name="cordova-plugin-network-information" />
   <plugin name="cordova-plugin-splashscreen" />
   <plugin name="cordova-plugin-vibration" />
-  <plugin name="phonegap-plugin-push" />
   <plugin name="cordova-plugin-whitelist" />
   <icon src="icon.png"/>
   <icon src="res/icon/android/icon-36-ldpi.png" platform="android" qualifier="ldpi"/>
