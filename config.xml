@@ -41,5 +41,6 @@
   <icon src="res/icon/android/icon-96-xhdpi.png" platform="android" qualifier="xhdpi"/>
   <icon src="res/icon/windows-phone/icon-48.png" platform="winphone"/>
   <icon src="res/icon/windows-phone/icon-173-tile.png" platform="winphone" role="background"/>
+  <splash src="splash.png" />
   <access origin="http://booksdelivery.com" subdomains="true" />
 </widget>
