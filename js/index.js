@@ -104,7 +104,7 @@ function allpickrefresh() {
 							{
 								bgcolor="";
 							}
-$('#allpicklist').append('<li class="collection-item avatar '+ bgcolor +'" id="b'+ pick.order_product_id +'"><img src="http://booksdelivery.com/image/'+ pick.image +'" alt="Photo" class="circle responsive-img" onclick="showimage(\''+ pick.image +'\')"><span class="title">' + pick.order_id + '_' + pick.order_product_id + ': ' + pick.product_name + '</span><p class="truncate">'+ pick.author + '<br>'+ pick.manufacturer_name +'</p><a href="#!" class="secondary-content" onclick="allproductpicked('+ pick.order_product_id +')">1/1<h5 class="teal white-text">&nbsp;' + pick.pick_quantity + '&nbsp;</h5> </a></li>');
+$('#allpicklist').append('<li class="collection-item avatar '+ bgcolor +'" id="b'+ pick.order_product_id +'"><img src="http://booksdelivery.com/image/'+ pick.image +'" alt="Photo" class="circle responsive-img" onclick="showimage(\''+ pick.image +'\')"><span class="title">' + pick.order_id + '_' + pick.order_product_id + ': ' + pick.product_name + '</span><p class="truncate">'+ pick.author + '<br>'+ pick.manufacturer_name +' - MRP : '+ pick.price + '</p><a href="#!" class="secondary-content" onclick="allproductpicked('+ pick.order_product_id +')">1/1<h5 class="teal white-text">&nbsp;' + pick.pick_quantity + '&nbsp;</h5> </a></li>');
  window.localStorage["olderorderid"]=pick.order_id;
 //alert(olderorderid);
 					    });
